@@ -1,0 +1,555 @@
+.back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; 
+}
+@font-face {
+  font-family: Vogue;
+  src: url(Vogue.ttf);
+}
+@font-face {
+  font-family: leche;
+  src: url(Lecheet.ttf);
+}
+@font-face {
+  font-family: noodle;
+  src: url(noodle.ttf);
+}
+html, body{
+    background-color: #F1F6F9;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header {
+    position: relative;
+    right: 62vh;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    color: black;
+    padding: 10px;  
+    
+  }
+  .logo {
+    position: relative;
+    right: 35vh;
+    bottom: 5vh;
+}
+
+.logo img {
+    max-height: 150px; 
+    
+}
+  
+  .contact-info p {
+    display: inline;
+    margin: 0;
+    font-size: 12px; 
+  }
+  
+  .social-link {
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  .social-link i {
+    vertical-align: middle;
+  }
+  
+  .fa-phone,
+  .fa-envelope {
+    margin-right: 5px;
+  }
+  .navbar1{
+    left: 20vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 8.2);
+    border-radius: 5px;
+    padding: 10px;
+    width: 65vw;
+
+    margin: -20px;
+    z-index: 2;
+  }
+
+  #navbarNav{
+    position: relative;
+    left: 45vh;
+    transition: background-color 0.3s;
+  }
+  #navbarNav a:hover{
+    background-color: #331D2C;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar1 h3{
+    padding-bottom: 9px;
+    padding-left: 10vh;
+    font-size: 37px;
+    margin: 0;
+  }
+  .h6-container{
+    display: flex;
+  }
+  .h6-container h6{
+    font-size: 16px;
+    margin-left: 14px;
+  }
+ .container1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: -54px;
+  background-image: url(Img/2.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+ }
+ .carouseltxt{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: noodle;
+  text-align: center;
+  font-size: 10vh;
+  top: 57vh;
+  position: absolute;
+  width: 100vw;
+  height: 25vh;
+ }
+ .carouseltxt h4{
+  margin-top: 2vh;
+ }
+#text1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 8vh;
+  position: absolute;
+  background-color: transparent;
+}
+#text1 h6{
+  padding-left: 60px;
+  font-size: 6vh;
+  font-family: Vogue;
+}
+#text1 h2{
+  font-size: 10vh;
+  font-family: Vogue;
+ }
+#text1 button{
+  border: 2px solid #000;
+  font-size: 2vh;
+  width: 113px; 
+  height: 40px; 
+}
+.container2{
+  position: fixed;
+  top: 113vh;
+  left: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 10px;
+  width: 780px;
+  margin: -20px;
+  position: absolute;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 8.2);
+  border-radius: 5px;
+  background-color: white;
+  width: 61vw;
+  height: 10vh;
+  z-index: 1;
+}
+.container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: -16vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+.carousel-inner img{
+  height: 110vh;
+  width: 110vw;
+}
+#text2{
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#text2 p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3vh;
+}
+#text2 h2{
+  font-size: 8vh;
+  font-family: noodle;
+}
+.container4 {
+  background-color: #EFE1D1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  top: 200%;
+  display: flex;
+}
+#text3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 8vh;
+  position: absolute;
+  background-color: transparent;
+  top: 20px;
+}
+.grid{
+  background-color: #F1F6F9;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  grid-column-gap: 10px;
+  justify-items: center;
+}
+
+.grid-item {
+  text-align: center;
+  width: 90%;
+  position: relative;
+  top: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red ;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img {
+  max-width:100%;
+  height: 100%;
+}
+.grid-item:hover{
+  transform: scale(1.1);
+}
+#imgtxt{
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  width: 75%;
+  height: 85%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imgtxt:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6); 
+  color: #fff;
+  padding: 10px;
+  position: relative;
+  bottom: 54vh;
+  left: 0vh;
+}
+.carousel-inner img {
+  width: 100%; 
+}
+.carousel-item:not(.active) {
+  display: none;
+}
+#tours{
+  margin-top:5vh;
+  position: relative;
+  left: 40vh;
+  margin-bottom: 5vh;
+}
+.imgrow{
+ 
+  position: relative; 
+  right: 10vh;
+}
+#toursimg{
+  position: relative;
+  top: 10vh;
+  width: 37vw;
+  height: 85vh;
+  box-shadow:0 6px 10px rgba(0, 0, 0, 8.2);
+}
+#toursimg2{
+  bottom:43vh;
+  left: 55vh;
+  position: absolute;
+  width: 34vw;
+  height: 65vh;
+  box-shadow:0 6px 10px rgba(0, 0, 0, 8.2);
+}
+
+.row2txt{
+  color: #1D5D9B;
+  font-weight: 500;
+  position: relative;
+  left: 60vh;
+  bottom: 59vh;
+}
+
+.row3txt{
+  position: relative;
+  left: 60vh;
+  bottom: 59vh;
+  font-size: 35px;
+ 
+  width: 30vw;
+}
+.row4txt{
+  position: relative;
+  left: 60vh;
+  bottom: 55vh;
+  font-size: 10px; 
+  width: 30vw;
+  }
+
+.submit{
+  position: relative;
+  left: 60vh;
+  bottom: 50vh;
+}
+
+.grid-container2 {
+  left: 22vh;
+  position: relative;
+  margin-top: -27vh ;
+  margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 80%;
+  grid-column-gap: 10px;
+  justify-items: center;
+}
+
+.grid-item2 {
+  padding: 5px;
+  text-align: center;
+  width: 90%;
+  position: relative;
+  top: -2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  flex: 1;
+  text-align: left;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.icon {
+  font-size: 24px;
+   color: #333;
+   margin-right: 10px;
+}
+.text {
+  font-size: 18px;
+  margin: 0;
+}
+.container h1{
+  position: relative;
+  left: 76vh;
+  top: 5vh;
+}
+.cultures{
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.signup {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 60vh;
+  background-image: url("big-lagoon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 5vh;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.parasignup {
+  position: relative;
+  top: 5vh;
+  padding: 20px;
+  color: #fff; 
+}
+.titlesignup{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+.textsignup{
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.sign-up-div{
+  position: relative;
+  margin-top: 5vh;
+  margin-right: 25vh;
+  border-radius: 10px;
+  padding-top: 5vh;
+  background-color: transparent;
+  width: 40vw;
+  height: 50vh;
+}
+.sign-up-div h2{
+  color: white;
+  text-align: center;
+}
+.sign-up-form{
+text-align: center;
+}
+.form-field{
+  margin-top: 2vh;
+  border-radius: 20px;
+}
+.submit-button{
+  width: 20vh;
+}
+.check{
+  text-align: center
+}
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+width: 300px; 
+height: 40px; 
+padding: 5px; 
+margin-bottom: 10px; 
+border-radius: 5px;
+}
+#readLessButton {
+  display: none;
+}
+.red {
+  color: #000000;
+}
+
+.orange {
+  color: #000000
+}
+
+.yellow {
+  color: #000000;
+}
+
+.green {
+  color: #000000;
+}
+
+.blue {
+  color: #1D5D9B;
+}
+.brown {
+  color: #1D5D9B;
+}
+.pink {
+  color: #1D5D9B;
+}
+
+   .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+      
+        @media screen and (max-width: 480px) {
+            h4 {
+                font-size: 4vh;
+            }
+
+            h2 {
+                font-size: 6vh;
+            }
+
+            .grid {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+            h4 {
+                font-size: 5vh;
+            }
+
+            h2 {
+                font-size: 7vh;
+            }
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (min-width: 1025px) and (max-width: 1200px) {
+            h4 {
+                font-size: 6vh;
+            }
+
+            h2 {
+                font-size: 8vh;
+            }
+        }
+
+        @media screen and (min-width: 1201px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+
+
+

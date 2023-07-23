@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="El-Nido.css">
+    <title>Tripify</title>
+    <link rel="icon" href="Img2/image-removebg-preview.png" type="image/png">
+</head>
+
+<body>
+    <div class="container-md-4">
+        <header class="header" style="background-color:#F1F6F9;">
+            <div class="logo"><img src="Img2/image-removebg-preview.png" alt=""></div>
+            <div class="contact-info" style="position: relative;right: 180px;">
+                <p><i class="fas fa-phone"></i> Phone: +1 123 456 7890</p>
+                <p>|</p>
+                <p><i class="fas fa-envelope"></i> Email: example@example.com</p>
+            </div>
+            <div class="social-media" style="position: relative;left:190px">
+                <a href="https://www.facebook.com/elnidotourpackages" target="_blank" class="social-link"><i
+                        class="fab fa-facebook-f" style="color:#1D5D9B;"></i></a>
+                <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"
+                        style="color:#1D5D9B;"></i></a>
+                <a href="https://www.instagram.com/explore/tags/elnido/" target="_blank" class="social-link"><i
+                        class="fab fa-instagram" style="color:#1D5D9B;"></i></a>
+                <a href="https://www.youtube.com/watch?v=aWOdllk6u2U" target="_blank" class="social-link"><i
+                        class="fa-brands fa-youtube" style="color:#1D5D9B;"></i></a>
+            </div>
+        </header>
+    </div>
+
+    <div class="navbar navbar-expand-lg navbar1 col-md-4">
+        <div class="container" id="Home">
+
+            <a class="navbar-brand" href="#"
+                style="font-size: 55px; font-family: noodle; position: relative; left:5vh;"><span class="red">T</span>
+                <span class="orange">R</span>
+                <span class="yellow">I</span>
+                <span class="green">P</span>
+                <span class="blue">I</span>
+                <span class="brown">F</span>
+                <span class="pink">Y</span></a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tours">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselSample" class="carousel slide" data-bs-ride="carousel">
+        <div class="overlay2"></div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Img2/bg2.webp" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="Img2/bg3.jpeg" class="d-block w-100 " alt="">
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSample" data-bs-slide="prev">
+        <i class="fa-solid fa-angle-left"
+            style="position: relative; top: 19vh; box-shadow: 0 6px 10px rgba(0, 0, 0, 8.2);"></i></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselSample" data-bs-slide="next">
+        <i class="fa-solid fa-angle-right"
+            style="position: relative; top: 20vh;  box-shadow: 0 6px 10px rgba(0, 0, 0, 8.2);"></i></button>
+    <div class="carouseltxt">
+        <h4>Tours & Travel</h4>
+        <p>Let's Discover El nido together</p>
+    </div>
+    <div class="container2 col-md-4">
+        <select id="dropdown">
+            <option value="option1">Destination</option>
+            <option value="option2">El Nido</option>
+            <option value="option3">Cebu</option>
+            <option value="option4">Manila</option>
+        </select>
+
+        <input type="date" class="date-input" id="date-input">
+        <input type="date" class="date-input" id="date-input">
+        <select id="dropdown">
+            <option value="option1">Destination</option>
+            <option value="option2">Manila</option>
+            <option value="option3">El Nido</option>
+            <option value="option4">Cebu</option>
+        </select>
+        <button style="color: white; background-color:#331D2C; border-color:#331D2C;">Submit</button>
+    </div>
+    <div class="container3 col-md-4" style=" background-color: #F1F6F9;">
+        <div id="text2">
+            <h2>El - nido... A Haven for beach lovers</h2>
+            <hr width="100%">
+            <p>
+                El Nido is a municipality on the northernmost tip of the province of Palawan, characterized by
+                awe-inspiring natural beauty, from dazzling lagoons, white sand beaches, rocky islets, towering
+                limestone
+                cliffs, and glasslike waters teeming with abundant marine life. No wonder El Nido has earned nothing but
+                praises
+                from visitors, and numerous accolades of being one the best island and beach destinations in the world.
+                El Nido
+                also encompasses over 40 islands peppered across the Bacuit Archipelago, each with its own unique
+                geological
+                <span class="collapse" id="moreText">
+                    wonders but the same natural majesty. And everywhere you look, the scene is almost otherworldly —
+                    its
+                    surrounding waters are a stunning mix of blue-green colors, its palm-fringed beach pockets have
+                    ultra-powdery
+                    sands, and its marine protected areas offer some of the best diving experiences in the entire
+                    Philippines.
+                    Duis vulputate diam in dolor euismod, nec faucibus ipsum sagittis. Pellentesque habitant morbi
+                    tristique
+                    senectus et netus et malesuada fames ac turpis egestas.
+                </span>
+            </p>
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#moreText" aria-expanded="false"
+                aria-controls="moreText" style="    background-color: #331D2C;">
+                Read More
+            </button>
+            <button class="btn btn-primary collapse" data-toggle="collapse" data-target="#moreText"
+                aria-expanded="false" aria-controls="moreText" id="readLessButton">
+                Read Less
+            </button>
+        </div>
+    </div>
+    
+        <div class="container4 col-md-4" style=" background-color: #F1F6F9;">
+            <div id="text3">
+                <h4 style="position: relative; bottom: 5vh; font-size: 6vh; color:#1D5D9B; font-family: noodle;"
+                    id="Destinations">Destinations</h4>
+                <h2 style="position: relative; bottom: 5vh; font-size: 8vh;  color: #14213d; font-family: noodle;">6
+                    Things
+                    Must Do in El Nido</h2>
+            </div>
+            <div class="grid col-md-4">
+                <div class="grid-item "> <img src="Img2/tourist3.jpg" alt="Image 1">
+                    <p id="imgtxt">Cliff at Nacpan Beach</p>
+                </div>
+                <div class="grid-item"> <img src="Img2/tourist2.avif" alt="Image 2">
+                    <p id="imgtxt">Kayak in Small Lagoon</p>
+                </div>
+                <div class="grid-item"> <img src="Img2/tourist1.jpg" alt="Image 3">
+                    <p id="imgtxt">Discover The Hidden Beach</p>
+                </div>
+                <div class="grid-item"> <img src="Img2/tourist5.avif" alt="Image 4">
+                    <p id="imgtxt">Lounge in Seven Commandos Beach</p>
+                </div>
+                <div class="grid-item"> <img src="Img2/tourist6.jpg" alt="Image 5">
+                    <p id="imgtxt">Snake Island</p>
+                </div>
+                <div class="grid-item"> <img src="Img2/tourist4.avif" alt="Image 6">
+                    <p id="imgtxt">Relax at Shimizu Island</p>
+                </div>
+            </div>
+        </div>
+    
+
+    <div class="container-md-4 w-50 col-md-4" id="tours">
+        <div class="row">
+            <div class="imgrow"><img
+                    src="Img2/Ultimate Travel Guide to El Nido, Philippines - Everything you need to know_ — Haylsa.jpg"
+                    alt="" id="toursimg"></div>
+        </div>
+        <div class="row2 col-md-4">
+            <img src="white.jpg" alt="" id="toursimg2">
+            <div class="row2txt">About Us</div>
+            <div class="row3txt">We Offer Best Tour Packages That Fits Your Budget</div>
+        </div>
+
+        <div class="row4txt col-md-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias sapiente quasi,
+            excepturi ducimus architecto cumque consequuntur inventore, rem autem exercitationem blanditiis unde tenetur
+            iste quam ipsa eligendi, sint accusamus placeat. lore</div>
+        <a href="#" class="btn btn-primary submit" style="background-color: #331D2C;">Submit</a>
+    </div>
+
+    <div class="grid-container2 col-md-4">
+        <div class="grid-item2">
+            <i class="fa-solid fa-tags" style="position: relative;bottom: 9vh;right: 2vh;font-size: 3vh; color:#1D5D9B ;"></i>
+            <div class="content">
+                <div class="title">Competitive Pricing</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque architecto
+                    obcaecati
+                    recusandae, </div>
+            </div>
+        </div>
+        <div class="grid-item2 col-md-4">
+            <i class="fa-solid fa-star" style="position: relative;bottom: 9vh;right: 3vh;font-size: 3vh; color:#1D5D9B"></i>
+            <div class="content">
+                <div class="title">Best Services</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem eveniet sunt
+                    quidem atque, amet culpa?
+                </div>
+            </div>
+        </div>
+        <div class="grid-item2 col-md-4">
+            <div class="icon">
+                <i class="fa-solid fa-globe" style="position: relative;bottom: 9vh;right: 1vh;font-size: 3vh; color:#1D5D9B"></i>
+            </div>
+            <div class="content">
+                <div class="title">Worldwide Coverage</div>
+                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dolorem eveniet sunt
+                    quidem atque, amet culpa?
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 style="position: relative; left:78vh; top:8vh; font-size: 7vh;  font-family: noodle; color:#1D5D9B;">
+            Culture</h1>
+        <h2 style="position: relative; left: 25vh; top: 8vh; font-size: 8vh ; font-family: noodle;">Experience The
+            Significant Historical
+            Occurrences</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 cultures">
+            <div class="col col-md-4">
+                <div class="card h-100 d-flex align-items-stretch">
+                    <img src="Img2/bangka.jpg" class="card-img-top" alt="Card Image" height="300px">
+                    <!-- <i class="fa-solid fa-plane-departure"></i> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Bangkas On The Beach</h5>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal1"><i
+                                class="fa-solid fa-circle-info"
+                                style="position: relative; left: 45vh; color: #14213d;"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card h-100 d-flex align-items-stretch">
+                    <img src="Img2/sawali.jpg" class="card-img-top" alt="Card Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Sawali Making</h5>
+
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal2"> <i
+                                class="fa-solid fa-circle-info"
+                                style="position: relative; left: 45vh; color: #331D2C;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card h-100 d-flex align-items-stretch">
+                    <img src="Img2/spiderman.jpeg" class="card-img-top" alt="Card Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">The “Spider-Man”</h5>
+
+                        <button type="button" class="btn " data-toggle="modal" data-target="#myModal3"><i
+                                class="fa-solid fa-circle-info"
+                                style="position: relative; left: 45vh; color:#331D2C;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card h-100 d-flex align-items-stretch">
+                    <img src="Img2/local.jpg" class="card-img-top" alt="Card Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Enjoying The Local Food</h5>
+
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal4"> <i
+                                class="fa-solid fa-circle-info"
+                                style="position: relative; left: 45vh; color: #331D2C;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card h-100 d-flex align-items-stretch">
+                    <img src="Img2/carabao.jpg" card-img-top alt="Card Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">A Carabao And Its Cart</h5>
+
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal"> <i
+                                class="fa-solid fa-circle-info"
+                                style="position: relative; left: 45vh; color: #331D2C;"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col col-md-4">
+                <div class="card h-100 d-flex align-items-stretch">
+                    <img src="Img2/nipa-shingles.jpg" class="card-img-top" alt="Card Image" height="300px">
+                    <div class="card-body">
+                        <h5 class="card-title">Nipa Making</h5>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#myModal5"> <i
+                                class="fa-solid fa-circle-info"
+                                style="position: relative; left: 45vh; color: #331D2C;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="signup">
+        <div class="overlay"></div>
+        <div class="parasignup">
+            <div class="titlesignup">99% off In Any Occassions</div>
+            <div class="textsignup">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium nisi, ea odit provident
+                    consequuntur ad deserunt iste a quasi recusandae nemo animi sed? Dignissimos dolorem laborum quo
+                    omnis illo mollitia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget mauris in justo tempus tincidunt.
+                </p>
+            </div>
+            <div class="check">
+                <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+                    voluptatibus </p>
+                <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+                    voluptatibus </p>
+                <p><i class="fa-solid fa-check"></i> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+                    voluptatibus </p>
+            </div>
+        </div>
+        <div class="sign-up-div" id="Contact">
+            <h2>Sign Up</h2>
+            <form class="sign-up-form" action="#" method="post">
+                <div class="form-field">
+                    <input class="form-input" type="text" id="name" name="name" required placeholder="Name">
+                </div>
+                <div class="form-field">
+                    <input class="form-input" type="email" id="email" name="email" required placeholder="E-mail">
+                </div>
+                <div class="form-field">
+                    <input class="form-input" type="password" id="password" name="password" required
+                        placeholder="Password">
+                </div>
+                <div class="form-field">
+                    <input class="submit-button" type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">A Carabao And Its Cart</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi aliquid et, voluptatem
+                        consequatur facere cupiditate eum. Esse sed deleniti maxime minus ratione quisquam consequatur
+                        magni voluptates voluptatibus, at possimus?</p>
+                    <video controls width="100%">
+                        <source src="Img2/Carabao Cart.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"><i class="fa-solid fa-square-xmark"
+                            style=" color:#331D2C;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Bangkas on The Beach</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi aliquid et, voluptatem
+                        consequatur facere cupiditate eum. Esse sed deleniti maxime minus ratione quisquam consequatur
+                        magni voluptates voluptatibus, at possimus?</p>
+                    <video controls width="100%">
+                        <source src="Img2/Bangka Boat In El Nido The Philippines.mp4    " type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"><i class="fa-solid fa-square-xmark"
+                            style=" color: #331D2C;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Sawali Making</h5>
+
+
+
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi aliquid et, voluptatem
+                        consequatur facere cupiditate eum. Esse sed deleniti maxime minus ratione quisquam consequatur
+                        magni voluptates voluptatibus, at possimus?</p>
+                    <video controls width="100%">
+                        <source src="Img2/Sawali Making_Trim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"><i class="fa-solid fa-square-xmark"
+                            style=" color:#331D2C;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">The “Spider-Man”</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi aliquid et, voluptatem
+                        consequatur facere cupiditate eum. Esse sed deleniti maxime minus ratione quisquam consequatur
+                        magni voluptates voluptatibus, at possimus?</p>
+                    <video controls width="100%">
+                        <source src="Img2/How They Harvest Coconuts In The Philippines_Trim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"><i class="fa-solid fa-square-xmark"
+                            style=" color: #331D2C;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Local Foods In El nido</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi aliquid et, voluptatem
+                        consequatur facere cupiditate eum. Esse sed deleniti maxime minus ratione quisquam consequatur
+                        magni voluptates voluptatibus, at possimus?</p>
+                    <p>Video Source:El-nido food vlog, Sunny Side</p>
+                    <video controls width="100%">
+                        <source src="Img2/el nido food vlog_Trim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"><i class="fa-solid fa-square-xmark"
+                            style=" color: #331D2C;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Nipa Making</h5>
+
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit nisi aliquid et, voluptatem
+                        consequatur facere cupiditate eum. Esse sed deleniti maxime minus ratione quisquam consequatur
+                        magni voluptates voluptatibus, at possimus?</p>
+                    <video controls width="100%">
+                        <source src="Img2/The Making of Nipa Shingles_Trim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal"><i class="fa-solid fa-square-xmark"
+                            style=" color: #331D2C;"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#top" class="btn btn-white back-to-top-btn"
+        style="color:#1D5D9B; box-shadow: 0 5px 5px rgba(0, 0, 0, 8.2);"><i class="fa-solid fa-angles-up"></i></a>
+
+
+
+</body>
+
+</html>
