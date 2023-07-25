@@ -611,6 +611,17 @@ border-radius: 5px;
   }
 }
 
+@media (max-width: 767px) {
+  footer {
+      display: none; /* Hide the heading when screen width is 767px or smaller */
+  }
+}
+
+@media (max-width: 479px) {
+  footer {
+      display: none; /* Display block when screen width is 479px or smaller */
+  }
+}
 
 
 
